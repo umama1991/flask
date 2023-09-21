@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block main %}
+
+    <h1>Calculate Average Marks</h1>
+    <form action="{{url_for('form')}}" method='POST'>
+            <input type="text" placeholder="Maths" name="maths" required="required"> <br><br><br>
+            <input type="text" placeholder="Science" name="science" required="required"><br><br><br>
+            <input type="text" placeholder="History" name="history" required="required"><br><br><br>
+            <input  type="submit" name="submit" ><br><br><br>
+            <!-- <botton type="submit"> Average </button> -->
+
+        </form>
+        <br><br><br><br><br>
+        The average mark is= {{score}}
+  {% endblock %}
+
